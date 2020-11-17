@@ -220,7 +220,7 @@ try
     "templateOptions": {},
     "type": "markdown",
     "summaryVisibility": "Show",
-    "body": "The following report will show local AD accounts that have no \"employeeID\" attribute set. Please wait while the data is loading...",
+    "body": "The following report will show local AD accounts that have no 'employeeID' attribute set. Please wait while the data is loading...",
     "requiresTemplateOptions": false
   },
   {
