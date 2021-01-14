@@ -315,7 +315,7 @@ $tmpSchema = @"
 "@ 
 
 $dynamicFormGuid = [PSCustomObject]@{} 
-Invoke-HelloIDDynamicForm -FormName "AD - Report - Accounts where "employeeID" is empty" -FormSchema $tmpSchema  -returnObject ([Ref]$dynamicFormGuid) 
+Invoke-HelloIDDynamicForm -FormName "AD - Report - Accounts where ""employeeID"" is empty" -FormSchema $tmpSchema  -returnObject ([Ref]$dynamicFormGuid) 
 <# END: Dynamic Form #>
 
 <# Begin: Delegated Form Access Groups and Categories #>
@@ -363,7 +363,7 @@ $delegatedFormCategoryGuids = ($delegatedFormCategoryGuids | ConvertTo-Json -Com
 
 <# Begin: Delegated Form #>
 $delegatedFormRef = [PSCustomObject]@{guid = $null; created = $null} 
-Invoke-HelloIDDelegatedForm -DelegatedFormName "AD - Report - Accounts where "employeeID" is empty" -DynamicFormGuid $dynamicFormGuid -AccessGroups $delegatedFormAccessGroupGuids -Categories $delegatedFormCategoryGuids -UseFaIcon "True" -FaIcon "fa fa-info-circle" -returnObject ([Ref]$delegatedFormRef) 
+Invoke-HelloIDDelegatedForm -DelegatedFormName "AD - Report - Accounts where ""employeeID"" is empty" -DynamicFormGuid $dynamicFormGuid -AccessGroups $delegatedFormAccessGroupGuids -Categories $delegatedFormCategoryGuids -UseFaIcon "True" -FaIcon "fa fa-info-circle" -returnObject ([Ref]$delegatedFormRef) 
 <# End: Delegated Form #>
 
 <# Begin: Delegated Form Task #>
